@@ -3,9 +3,7 @@ require 'rack'
 module Rack
 
   class Robots
-    
-    VERSION = '0.0.1'
-  
+      
     def initialize(app, items)
       @app = app
       @items = items

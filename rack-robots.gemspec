@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   }
   s.homepage      = 'http://github.com/jslabovitz/rack-robots'
 
+  s.add_dependency  'rack'
+
   s.files        = Dir.glob('{bin,lib,test}/**/*') + %w(README.textile)
   s.require_path = 'lib'
 end

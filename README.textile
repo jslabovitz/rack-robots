@@ -1,0 +1,1 @@
+Rack application to serve a robots.txt file dynamically.

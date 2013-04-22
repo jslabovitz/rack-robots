@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.summary       = 'Serve a robots.txt file dynamically.'
 
   s.authors        = ['John Labovitz', 'Piotr Gęga']
-  s.emails         = ['johnl@johnlabovitz.com', 'pietia@appgrinder.pl']
+  s.email          = ['johnl@johnlabovitz.com', 'pietia@appgrinder.pl']
   s.description   = %q{
     Rack application to serve a robots.txt file dynamically.    
   }

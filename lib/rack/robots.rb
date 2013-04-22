@@ -7,6 +7,7 @@ module Rack
     def initialize(app, items)
       @app = app
       @items = items
+      @is_enabled = %w{1 true yes}.include?(ENV["DISABLE_ROBOTS"])
     end
     
     def to_s
@@ -14,7 +15,7 @@ module Rack
     end
     
     def call(env)
-      if env['PATH_INFO'] == '/robots.txt'
+      if @is_enabled && env['PATH_INFO'] == '/robots.txt'
         [200, { 'Content-Type' => 'text/plain' }, [to_s]]
       else
         @app.call(env)

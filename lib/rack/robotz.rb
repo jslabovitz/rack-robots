@@ -2,7 +2,7 @@ require 'rack'
 
 module Rack
 
-  class Robots
+  class Robotz
       
     def initialize(app, items)
       @app = app

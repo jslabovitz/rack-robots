@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name          = 'rack-robots'
+  s.name          = 'rack-robotz'
   s.version       = '0.0.1'
   s.summary       = 'Serve a robots.txt file dynamically.'
 
-  s.author        = 'John Labovitz'
-  s.email         = 'johnl@johnlabovitz.com'
+  s.authors        = ['John Labovitz', 'Piotr Gęga']
+  s.emails         = ['johnl@johnlabovitz.com', 'pietia@appgrinder.pl']
   s.description   = %q{
     Rack application to serve a robots.txt file dynamically.    
   }
-  s.homepage      = 'http://github.com/jslabovitz/rack-robots'
+  s.homepage      = 'http://github.com/jslabovitz/rack-robotz'
 
   s.add_dependency  'rack'
 

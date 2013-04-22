@@ -3,9 +3,9 @@ task :test do
 end
  
 task :build => :test do
-  system 'gem build rack-robots.gemspec'
+  system 'gem build rack-robotz.gemspec'
 end
 
 task :release => :build do
-  system "gem push rack-robots-#{Rack::Robots::VERSION}"
+  system "gem push rack-robotz-#{Rack::Robotz::VERSION}"
 end

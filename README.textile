@@ -1,4 +1,5 @@
-# Rack-robotz
+# rack-robotz
 
 * Rack application to serve a robots.txt file dynamically.
 * set `DISABLE_ROBOTS=true` to enable middleware
+* sample usage: `use Rack::Robots, "User-Agent" => "*", "Disallow" => "/"`
